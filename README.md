@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Funding](https://img.shields.io/badge/Funded-SRSP--321-red)](https://neduet.edu.pk)
 [![Status](https://img.shields.io/badge/Status-Active%20Research-brightgreen)](https://github.com/AkbarTheAnalyst/pino-wall-thermal)
-[![Zenodo](https://img.shields.io/badge/Data-Zenodo%20DOI%20pending-blue)](https://zenodo.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21311300.svg)](https://doi.org/10.5281/zenodo.21311300)
 
 > **Sindh Research Project SRSP-321** — NED University of Engineering & Technology, Karachi, Pakistan
 > A two-stage FDM + Physics-Informed Neural Operator (PINO) framework for parametric transient thermal analysis of five indigenous Sindh wall materials under diurnal solar forcing, with ISO 13786 dynamic metrics, a data-efficiency study, and an FDM-confirmed climate regime map.
@@ -151,7 +151,7 @@ pip install -r requirements.txt
 
 **Run order:** (1) `fdm_solver_diurnal.ipynb` top-to-bottom — all validations run before the sweep and any failure stops execution; produces `sindh_dataset_diurnal.npz` and `material_ranking_diurnal.csv`. (2) `pino_diurnal.ipynb` — expects both files (on Google Drive if using Colab, paths set via the `DRIVE` variable in Cell 1). The notebooks were developed on Google Colab (Stage 2 on a T4 GPU); to run locally, replace the `drive.mount` block with a local path. The optional data-efficiency cell (~1–2 h) can be disabled via `RUN_DATA_EFFICIENCY = False`.
 
-The dataset and executed notebooks are also archived on Zenodo: **DOI to be added upon release.**
+The dataset and executed notebooks are also archived on Zenodo: [10.5281/zenodo.21311300](https://doi.org/10.5281/zenodo.21311300).
 
 ---
 
@@ -231,7 +231,7 @@ If you use this work, please cite:
                low-cost wall materials (diurnal periodic-day formulation)},
   publisher = {Zenodo},
   year      = {2026},
-  note      = {DOI to be added upon release}
+  doi       = {10.5281/zenodo.21311300}
 }
 ```
 
