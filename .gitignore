@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model checkpoints (archived on Zenodo, not tracked here)
+*.pt
+
+# LaTeX build artifacts (if the paper folder ever overlaps)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS
+Thumbs.db
+.DS_Store
