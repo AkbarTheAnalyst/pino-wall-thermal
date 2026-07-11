@@ -41,20 +41,20 @@ with a half-sine clear-sky irradiance profile $G_s(t)$ and a sinusoidal outdoor 
 (max at 15:00), and the resulting sol-air temperature T<sub>sa</sub>(t).</em>
 </td>
 <td align="center" valign="top" width="50%">
-<img src="assets/pino_dynamic_metrics_parity.png" width="100%"/>
-<br>
-<em>PINO reproduces the ISO 13786 dynamic metrics across the test set:
-time lag (MAE 0.99 h) and decrement factor (MAE 0.010),
-PINO prediction vs. FDM ground truth.</em>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="50%">
 <img src="assets/data_efficiency.png" width="100%"/>
 <br>
 <em>Data efficiency: PINO trained on 150 FDM samples matches a data-only
 FNO trained on 300 — the physics loss halves the high-fidelity data budget
 in the data-scarce regime.</em>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<img src="assets/pino_dynamic_metrics_parity.png" width="100%"/>
+<br>
+<em>PINO reproduces the ISO 13786 dynamic metrics across the test set:
+time lag (MAE 0.99 h) and decrement factor (MAE 0.010),
+PINO prediction vs. FDM ground truth.</em>
 </td>
 <td align="center" valign="top" width="50%">
 <img src="assets/pino_error_vs_position.png" width="100%"/>
