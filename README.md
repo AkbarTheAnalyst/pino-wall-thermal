@@ -18,7 +18,7 @@ This repository contains the full implementation of a two-stage computational fr
 
 $$\rho c_p \frac{\partial T}{\partial t} = \frac{\partial}{\partial x}\left(k_{\mathrm{eff}} \frac{\partial T}{\partial x}\right), \qquad -k_{\mathrm{eff}}\frac{\partial T}{\partial x}\Big|_{x=0} = h_{\mathrm{out}}\bigl(T_{\mathrm{out}}(t)-T\bigr) + \alpha_s G_s(t)$$
 
-with a half-sine clear-sky irradiance profile $G_s(t)$ and a sinusoidal outdoor air temperature $T_{\mathrm{out}}(t)$ (maximum at 15:00, fixed 12 K swing). Five identical days are simulated per sample and the **final, periodic quasi-steady day** is extracted. Stage 2 trains a **PINO** (FNO backbone + PDE residual loss) to learn the parameter-to-solution operator $\boldsymbol{\mu} \mapsto T(x,t)$ over a nine-dimensional space of material, geometry, moisture, and climate parameters.
+with a half-sine clear-sky irradiance profile $G_s(t)$ and a sinusoidal outdoor air temperature $T_{\mathrm{out}}(t)$ (maximum at 15:00, fixed 12 K swing). The forcing amplitudes are verified against NASA POWER satellite and reanalysis data for rural upper Sindh across three years and two grid cells — see [`data/nasa_power/`](data/nasa_power/) for the verification package. Five identical days are simulated per sample and the **final, periodic quasi-steady day** is extracted. Stage 2 trains a **PINO** (FNO backbone + PDE residual loss) to learn the parameter-to-solution operator $\boldsymbol{\mu} \mapsto T(x,t)$ over a nine-dimensional space of material, geometry, moisture, and climate parameters.
 
 **Key findings:**
 - The Crank–Nicolson FDM solver achieves second-order space–time convergence in the time-varying setting (**0.58 mK** inner-surface error at production resolution) and passes a Robin zero-drift test to **7.4×10⁻¹³ K**; every one of the 1500 dataset samples reaches a verified periodic state (periodicity ≤ 0.043 K).
@@ -163,7 +163,14 @@ pino-wall-thermal/
 │   ├── fdm_solver_diurnal.ipynb        # Stage 1: validated FDM data generation
 │   └── pino_diurnal.ipynb              # Stage 2: PINO/FNO training + all analyses
 ├── data/
-│   └── sindh_dataset_diurnal.npz       # 1500-sample LHS dataset (final periodic day)
+│   ├── sindh_dataset_diurnal.npz       # 1500-sample LHS dataset (final periodic day)
+│   └── nasa_power/                     # climate forcing verification package
+│       ├── README_NASA_POWER_verification.md
+│       ├── POWER_Point_Hourly_20250501_20250630_027d70N_068d86E_LST.csv
+│       ├── POWER_Point_Daily_20240501_20240630_027d70N_068d86E_LST.csv
+│       ├── POWER_Point_Daily_20250501_20250630_027d70N_068d86E_LST.csv
+│       ├── POWER_Point_Daily_20260501_20260630_027d70N_068d86E_LST.csv
+│       └── POWER_Point_Daily_20250501_20250630_027d56N_068d21E_LST.csv
 ├── results/
 │   ├── material_ranking_diurnal.csv    # FDM ground-truth ranking + dynamic metrics
 │   ├── fdm_convergence_diurnal.csv     # diurnal space–time convergence study
@@ -196,6 +203,9 @@ For a linear problem, the time-mean of the periodic solution equals the steady s
 **Why keep FDM as the ranking basis when PINO agrees?**
 The operator's largest error (0.708 K, bamboo panel at the low-conductivity edge of the sampled range) is comparable to the bamboo–adobe gap itself. The FDM values therefore anchor all downstream tables; the PINO is the rapid-evaluation tool whose ranking agreement is verified rather than assumed — and it is what makes the 400-point climate sweep and 11,264-evaluation Sobol analysis affordable.
 
+**Why is the climate forcing archived alongside the code?**
+The two fixed forcing amplitudes (900 W m⁻² peak irradiance; 12 K diurnal swing) are verified against NASA POWER data for rural upper Sindh across three consecutive years (2024–2026) and two independent MERRA-2 grid cells (Sukkur and Larkana). The raw CSVs, request settings, and derived statistics live in [`data/nasa_power/`](data/nasa_power/) so the verification is reproducible: the observed May–June swing spans roughly 7–23 K with a median near 16 K, making the adopted 12 K a deliberately conservative choice, and observed clear-day peak irradiance is 888–1017 W m⁻².
+
 ---
 
 ## References
@@ -207,8 +217,8 @@ The operator's largest error (0.708 K, bamboo panel at the low-conductivity edge
 - Saltelli, A., Annoni, P., Azzini, I., et al. (2010). Variance based sensitivity analysis of model output. *Computer Physics Communications*, 181(2), 259–270.
 - ISO 13786:2017. Thermal performance of building components — Dynamic thermal characteristics — Calculation methods.
 - ISO 6946:2017. Building components and building elements — Thermal resistance and thermal transmittance.
-- Stackhouse, P. W., et al. (2016). NASA POWER — Surface meteorology and Solar Energy. NASA Langley Research Center.
-- Khan, M. A., & Raees, F. (2026). A systematic study of physics-informed neural networks for level-set interface advection. *Machine Learning: Science and Technology*, under review (MLST-105622).
+- NASA Langley Research Center (2026). NASA Prediction of Worldwide Energy Resources (POWER), Hourly and Daily Data, MERRA-2 and CERES SYN1deg. https://power.larc.nasa.gov (accessed July 2026).
+- Khan, M. A., & Raees, F. (2026). A systematic study of physics-informed neural networks for the level-set interface advection. *Machine Learning: Science and Technology*, in press. https://doi.org/10.1088/2632-2153/ae8b74
 
 ---
 
