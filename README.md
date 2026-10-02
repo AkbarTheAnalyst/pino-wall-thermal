@@ -111,11 +111,11 @@ Mean ± 95% confidence interval over three seeds.
 
 | Stage | Notebook | What it does | Runtime |
 |-------|----------|--------------|---------|
-| 1 — FDM data generation | `notebooks/fdm_solver_diurnal.ipynb` | Validations (MMS, Robin zero-drift, periodicity/IC-independence), material ranking with dynamic metrics, 1500-sample LHS sweep, dataset export. Needs no input files and runs first. Cells A1–A9 and C1: exact periodic solution, verification against it, solver timing, ISO 13786 quantities, Monte Carlo rank reversal, exact climate maps, indoor-temperature dependence, longwave sky exchange, Sobol' indices, cost sensitivity | ~20 min + ~10 min (CPU) |
+| 1 — FDM data generation | `notebooks/fdm_solver_diurnal.ipynb` | Validations (MMS, Robin zero-drift, periodicity and initial condition), material ranking with dynamic metrics, 1500-sample LHS sweep, dataset export. Needs no input files and runs first. Cells A1–A9 and C1: exact periodic solution, verification against it, solver timing, ISO 13786 quantities, Monte Carlo rank reversal, exact climate maps, indoor-temperature dependence, longwave sky exchange, Sobol' indices, cost sensitivity | ~20 min + ~10 min (CPU) |
 | 2 — PINO training & analysis | `notebooks/pino_diurnal.ipynb` | Uses the FDM outputs. Cells B1–B9: evaluation helpers and extended metrics, multi-seed data-efficiency study, λ sensitivity, representative models (loaded if provided, otherwise trained), validation figures, inference timing; PINO ranking, climate sweep and Sobol' sensitivity; comparison with the exact solution and Figure 12 (B9) | ~20 min with the provided models and results; ~8 h to retrain everything (T4 GPU) |
 
 ### FDM solver (Stage 1)
-Crank–Nicolson with ghost-node Robin boundary rows; time-varying forcing enters the right-hand side **averaged over old/new time levels** (preserves O(Δt²)); the constant tridiagonal system is **LU-factorised once per run**. Production grid: N = 64 intervals, 4000 steps/day (Δt = 21.6 s), 5 days, final day stored on a 65 × 121 grid. Smart initial condition: Robin steady state of the time-mean forcing (spin-up accelerator; final day verified IC-independent).
+Crank–Nicolson with ghost-node Robin boundary rows; time-varying forcing enters the right-hand side **averaged over old/new time levels** (preserves O(Δt²)); the constant tridiagonal system is **LU-factorised once per run**. Production grid: N = 64 intervals, 4000 steps/day (Δt = 21.6 s), 5 days, final day stored on a 65 × 121 grid. Smart initial condition: Robin steady state of the time-mean forcing (spin-up accelerator; every stored final day agrees with the exact periodic solution to within 46 mK).
 
 ### Exact periodic solution
 Each Fourier harmonic of the sol-air forcing has a closed-form solution of the heat equation with Robin conditions; the inner-surface temperature is the sum over harmonics. The forcing coefficients are known analytically, and 64 harmonics resolve J to within 1.3×10⁻⁵ K everywhere in the parameter space.
@@ -210,7 +210,7 @@ A wall's comparative performance under cyclic solar loading is a property of its
 With time-varying boundary forcing, using only the new-time forcing silently degrades CN to first order in time. Averaging T_out and Q_solar over the old and new time levels preserves the O(Δt²) accuracy that the convergence study verifies.
 
 **Why initialise at the mean-forcing steady state?**
-For a linear problem, the time-mean of the periodic solution equals the steady solution under time-mean forcing. Initialising there removes the slow DC transient, so five spin-up days suffice even for the most sluggish wall (verified: worst-case day-4→day-5 residual 0.0125 K vs 0.161 K from a uniform IC).
+For a linear problem, the time-mean of the periodic solution equals the steady solution under time-mean forcing. Initialising there removes the slow DC transient, so five spin-up days suffice: on a low-diffusivity test wall the day-4→day-5 residual is 0.0125 K, against 0.161 K from a uniform IC, and every stored final day agrees with the exact periodic solution to within 46 mK.
 
 **Why an exact periodic solution alongside the FDM?**
 The problem is linear with constant coefficients and periodic forcing, so its periodic steady state can be computed exactly. This gives an independent, analytical reference for verifying the FDM solver and the whole dataset, and it is cheap enough (~0.4 ms per case, batched) to run the Monte Carlo, climate-map and Sobol' analyses directly.
@@ -255,8 +255,8 @@ If you use this work, please cite:
 
 @dataset{akbar2026pino_data,
   author    = {Muhammad Akbar Khan and Fahim Raees},
-  title     = {FDM dataset and PINO code for thermal ranking of
-               low-cost wall materials (diurnal periodic-day formulation)},
+  title     = {A Physics-Informed Neural Operator for Thermal Ranking of
+               Low-Cost Wall Materials in Hot-Dry Climates: Source Code and Data},
   publisher = {Zenodo},
   year      = {2026},
   doi       = {10.5281/zenodo.21311299}
