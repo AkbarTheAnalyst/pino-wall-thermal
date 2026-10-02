@@ -1,0 +1,29 @@
+{
+  "title": "A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates: Source Code and Data",
+  "upload_type": "software",
+  "version": "1.2.0",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Khan, Muhammad Akbar",
+      "orcid": "0009-0001-7956-0080",
+      "affiliation": "NED University of Engineering & Technology"
+    },
+    {
+      "name": "Raees, Fahim",
+      "orcid": "0000-0002-2396-1491",
+      "affiliation": "NED University of Engineering & Technology"
+    }
+  ],
+  "keywords": [
+    "physics-informed neural operator",
+    "Fourier neural operator",
+    "building envelope",
+    "transient heat transfer",
+    "indigenous wall materials",
+    "exact periodic solution",
+    "uncertainty quantification"
+  ],
+  "description": "<p>Source code, data and trained models for the manuscript: Khan, M. A., Raees, F. and Fatima, U. \"A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates\" (Scientific Reports, under review). Version 1.2.0 corresponds to the revised manuscript and reproduces all its results, tables and figures.</p><p><b>Contents.</b> notebooks/fdm_solver_diurnal.ipynb (run first; CPU, about 30 min): Crank-Nicolson FDM with diurnal Robin forcing, validations, 1500-sample LHS dataset and material ranking; exact periodic (frequency-domain) solution used for verification, solver timing, ISO 13786 quantities, Monte Carlo rank reversal, exact climate maps, indoor-temperature dependence, longwave sky exchange, Sobol' indices and cost sensitivity. notebooks/pino_diurnal.ipynb (T4 GPU, about 20 min with the provided models): FNO and PINO evaluation, multi-seed data-efficiency and lambda studies, figures, inference timing and comparison with the exact solution. data/: dataset and NASA POWER forcing verification package. models/: representative FNO and PINO (median seed). results/: all result tables. figures/: all figures (PNG and PDF).</p><p><b>Changes from v1.1.0.</b> Analyses added for the peer-review revision; notebooks reorganised so that the FDM notebook runs first and the PINO notebook second; trained models added.</p>"
+}
