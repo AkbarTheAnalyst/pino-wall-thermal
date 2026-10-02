@@ -11,14 +11,14 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 25.0,531.578947368421,Fired clay brick,Fired clay brick
 25.0,568.421052631579,Fired clay brick,Fired clay brick
 25.0,605.2631578947369,Fired clay brick,Fired clay brick
-25.0,642.1052631578948,Fired clay brick,Fired clay brick
-25.0,678.9473684210527,Fired clay brick,Fired clay brick
-25.0,715.7894736842105,Fired clay brick,Fired clay brick
-25.0,752.6315789473684,Fired clay brick,Fired clay brick
-25.0,789.4736842105264,Fired clay brick,Fired clay brick
+25.0,642.1052631578948,Lime-stabilised bamboo panel,Fired clay brick
+25.0,678.9473684210527,Lime-stabilised bamboo panel,Fired clay brick
+25.0,715.7894736842105,Lime-stabilised bamboo panel,Fired clay brick
+25.0,752.6315789473684,Lime-stabilised bamboo panel,Fired clay brick
+25.0,789.4736842105264,Lime-stabilised bamboo panel,Fired clay brick
 25.0,826.3157894736843,Lime-stabilised bamboo panel,Fired clay brick
-25.0,863.1578947368422,Lime-stabilised bamboo panel,Fired clay brick
-25.0,900.0,Lime-stabilised bamboo panel,Fired clay brick
+25.0,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
+25.0,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
 26.210526315789473,200.0,Fired clay brick,Fired clay brick
 26.210526315789473,236.8421052631579,Fired clay brick,Fired clay brick
 26.210526315789473,273.6842105263158,Fired clay brick,Fired clay brick
@@ -30,15 +30,15 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 26.210526315789473,494.7368421052632,Fired clay brick,Fired clay brick
 26.210526315789473,531.578947368421,Fired clay brick,Fired clay brick
 26.210526315789473,568.421052631579,Fired clay brick,Fired clay brick
-26.210526315789473,605.2631578947369,Fired clay brick,Fired clay brick
-26.210526315789473,642.1052631578948,Fired clay brick,Fired clay brick
-26.210526315789473,678.9473684210527,Fired clay brick,Fired clay brick
-26.210526315789473,715.7894736842105,Fired clay brick,Fired clay brick
+26.210526315789473,605.2631578947369,Lime-stabilised bamboo panel,Fired clay brick
+26.210526315789473,642.1052631578948,Lime-stabilised bamboo panel,Fired clay brick
+26.210526315789473,678.9473684210527,Lime-stabilised bamboo panel,Fired clay brick
+26.210526315789473,715.7894736842105,Lime-stabilised bamboo panel,Fired clay brick
 26.210526315789473,752.6315789473684,Lime-stabilised bamboo panel,Fired clay brick
-26.210526315789473,789.4736842105264,Lime-stabilised bamboo panel,Fired clay brick
-26.210526315789473,826.3157894736843,Lime-stabilised bamboo panel,Fired clay brick
-26.210526315789473,863.1578947368422,Lime-stabilised bamboo panel,Fired clay brick
-26.210526315789473,900.0,Lime-stabilised bamboo panel,Fired clay brick
+26.210526315789473,789.4736842105264,Lime-stabilised bamboo panel,Clay-straw adobe
+26.210526315789473,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
+26.210526315789473,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
+26.210526315789473,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
 27.42105263157895,200.0,Fired clay brick,Fired clay brick
 27.42105263157895,236.8421052631579,Fired clay brick,Fired clay brick
 27.42105263157895,273.6842105263158,Fired clay brick,Fired clay brick
@@ -50,12 +50,12 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 27.42105263157895,494.7368421052632,Fired clay brick,Fired clay brick
 27.42105263157895,531.578947368421,Fired clay brick,Fired clay brick
 27.42105263157895,568.421052631579,Fired clay brick,Fired clay brick
-27.42105263157895,605.2631578947369,Fired clay brick,Fired clay brick
-27.42105263157895,642.1052631578948,Fired clay brick,Fired clay brick
-27.42105263157895,678.9473684210527,Fired clay brick,Fired clay brick
+27.42105263157895,605.2631578947369,Lime-stabilised bamboo panel,Fired clay brick
+27.42105263157895,642.1052631578948,Lime-stabilised bamboo panel,Fired clay brick
+27.42105263157895,678.9473684210527,Lime-stabilised bamboo panel,Fired clay brick
 27.42105263157895,715.7894736842105,Lime-stabilised bamboo panel,Fired clay brick
-27.42105263157895,752.6315789473684,Lime-stabilised bamboo panel,Fired clay brick
-27.42105263157895,789.4736842105264,Lime-stabilised bamboo panel,Fired clay brick
+27.42105263157895,752.6315789473684,Lime-stabilised bamboo panel,Clay-straw adobe
+27.42105263157895,789.4736842105264,Lime-stabilised bamboo panel,Clay-straw adobe
 27.42105263157895,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
 27.42105263157895,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
 27.42105263157895,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -69,8 +69,8 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 28.63157894736842,457.89473684210526,Fired clay brick,Fired clay brick
 28.63157894736842,494.7368421052632,Fired clay brick,Fired clay brick
 28.63157894736842,531.578947368421,Fired clay brick,Fired clay brick
-28.63157894736842,568.421052631579,Fired clay brick,Fired clay brick
-28.63157894736842,605.2631578947369,Fired clay brick,Fired clay brick
+28.63157894736842,568.421052631579,Lime-stabilised bamboo panel,Fired clay brick
+28.63157894736842,605.2631578947369,Lime-stabilised bamboo panel,Fired clay brick
 28.63157894736842,642.1052631578948,Lime-stabilised bamboo panel,Fired clay brick
 28.63157894736842,678.9473684210527,Lime-stabilised bamboo panel,Fired clay brick
 28.63157894736842,715.7894736842105,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -88,7 +88,7 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 29.842105263157894,421.0526315789474,Fired clay brick,Fired clay brick
 29.842105263157894,457.89473684210526,Fired clay brick,Fired clay brick
 29.842105263157894,494.7368421052632,Fired clay brick,Fired clay brick
-29.842105263157894,531.578947368421,Fired clay brick,Fired clay brick
+29.842105263157894,531.578947368421,Lime-stabilised bamboo panel,Fired clay brick
 29.842105263157894,568.421052631579,Lime-stabilised bamboo panel,Fired clay brick
 29.842105263157894,605.2631578947369,Lime-stabilised bamboo panel,Fired clay brick
 29.842105263157894,642.1052631578948,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -108,8 +108,8 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 31.05263157894737,421.0526315789474,Fired clay brick,Fired clay brick
 31.05263157894737,457.89473684210526,Fired clay brick,Fired clay brick
 31.05263157894737,494.7368421052632,Lime-stabilised bamboo panel,Fired clay brick
-31.05263157894737,531.578947368421,Lime-stabilised bamboo panel,Clay-straw adobe
-31.05263157894737,568.421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
+31.05263157894737,531.578947368421,Lime-stabilised bamboo panel,Fired clay brick
+31.05263157894737,568.421052631579,Lime-stabilised bamboo panel,Fired clay brick
 31.05263157894737,605.2631578947369,Lime-stabilised bamboo panel,Clay-straw adobe
 31.05263157894737,642.1052631578948,Lime-stabilised bamboo panel,Clay-straw adobe
 31.05263157894737,678.9473684210527,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -124,10 +124,10 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 32.26315789473684,273.6842105263158,Fired clay brick,Fired clay brick
 32.26315789473684,310.5263157894737,Fired clay brick,Fired clay brick
 32.26315789473684,347.36842105263156,Fired clay brick,Fired clay brick
-32.26315789473684,384.2105263157895,Lime-stabilised bamboo panel,Fired clay brick
-32.26315789473684,421.0526315789474,Lime-stabilised bamboo panel,Fired clay brick
-32.26315789473684,457.89473684210526,Lime-stabilised bamboo panel,Clay-straw adobe
-32.26315789473684,494.7368421052632,Lime-stabilised bamboo panel,Clay-straw adobe
+32.26315789473684,384.2105263157895,Fired clay brick,Fired clay brick
+32.26315789473684,421.0526315789474,Fired clay brick,Fired clay brick
+32.26315789473684,457.89473684210526,Lime-stabilised bamboo panel,Fired clay brick
+32.26315789473684,494.7368421052632,Lime-stabilised bamboo panel,Fired clay brick
 32.26315789473684,531.578947368421,Lime-stabilised bamboo panel,Clay-straw adobe
 32.26315789473684,568.421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
 32.26315789473684,605.2631578947369,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -142,10 +142,10 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 33.473684210526315,200.0,Fired clay brick,Fired clay brick
 33.473684210526315,236.8421052631579,Fired clay brick,Fired clay brick
 33.473684210526315,273.6842105263158,Fired clay brick,Fired clay brick
-33.473684210526315,310.5263157894737,Lime-stabilised bamboo panel,Fired clay brick
-33.473684210526315,347.36842105263156,Lime-stabilised bamboo panel,Clay-straw adobe
-33.473684210526315,384.2105263157895,Lime-stabilised bamboo panel,Clay-straw adobe
-33.473684210526315,421.0526315789474,Lime-stabilised bamboo panel,Clay-straw adobe
+33.473684210526315,310.5263157894737,Fired clay brick,Fired clay brick
+33.473684210526315,347.36842105263156,Fired clay brick,Fired clay brick
+33.473684210526315,384.2105263157895,Lime-stabilised bamboo panel,Fired clay brick
+33.473684210526315,421.0526315789474,Lime-stabilised bamboo panel,Fired clay brick
 33.473684210526315,457.89473684210526,Lime-stabilised bamboo panel,Clay-straw adobe
 33.473684210526315,494.7368421052632,Lime-stabilised bamboo panel,Clay-straw adobe
 33.473684210526315,531.578947368421,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -159,10 +159,10 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 33.473684210526315,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
 33.473684210526315,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
 33.473684210526315,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
-34.68421052631579,200.0,Lime-stabilised bamboo panel,Clay-straw adobe
-34.68421052631579,236.8421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
-34.68421052631579,273.6842105263158,Lime-stabilised bamboo panel,Clay-straw adobe
-34.68421052631579,310.5263157894737,Lime-stabilised bamboo panel,Clay-straw adobe
+34.68421052631579,200.0,Fired clay brick,Fired clay brick
+34.68421052631579,236.8421052631579,Fired clay brick,Fired clay brick
+34.68421052631579,273.6842105263158,Fired clay brick,Fired clay brick
+34.68421052631579,310.5263157894737,Fired clay brick,Fired clay brick
 34.68421052631579,347.36842105263156,Lime-stabilised bamboo panel,Clay-straw adobe
 34.68421052631579,384.2105263157895,Lime-stabilised bamboo panel,Clay-straw adobe
 34.68421052631579,421.0526315789474,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -179,9 +179,9 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 34.68421052631579,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
 34.68421052631579,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
 34.68421052631579,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
-35.89473684210526,200.0,Lime-stabilised bamboo panel,Clay-straw adobe
-35.89473684210526,236.8421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
-35.89473684210526,273.6842105263158,Lime-stabilised bamboo panel,Clay-straw adobe
+35.89473684210526,200.0,Fired clay brick,Fired clay brick
+35.89473684210526,236.8421052631579,Clay-straw adobe,Clay-straw adobe
+35.89473684210526,273.6842105263158,Clay-straw adobe,Clay-straw adobe
 35.89473684210526,310.5263157894737,Lime-stabilised bamboo panel,Clay-straw adobe
 35.89473684210526,347.36842105263156,Lime-stabilised bamboo panel,Clay-straw adobe
 35.89473684210526,384.2105263157895,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -199,8 +199,8 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 35.89473684210526,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
 35.89473684210526,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
 35.89473684210526,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
-37.10526315789474,200.0,Lime-stabilised bamboo panel,Clay-straw adobe
-37.10526315789474,236.8421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
+37.10526315789474,200.0,Clay-straw adobe,Clay-straw adobe
+37.10526315789474,236.8421052631579,Clay-straw adobe,Clay-straw adobe
 37.10526315789474,273.6842105263158,Lime-stabilised bamboo panel,Clay-straw adobe
 37.10526315789474,310.5263157894737,Lime-stabilised bamboo panel,Clay-straw adobe
 37.10526315789474,347.36842105263156,Lime-stabilised bamboo panel,Clay-straw adobe
@@ -219,7 +219,7 @@ Tout_C,Gs_Wm2,winner_all5,winner_H_only
 37.10526315789474,826.3157894736843,Lime-stabilised bamboo panel,Clay-straw adobe
 37.10526315789474,863.1578947368422,Lime-stabilised bamboo panel,Clay-straw adobe
 37.10526315789474,900.0,Lime-stabilised bamboo panel,Clay-straw adobe
-38.31578947368421,200.0,Lime-stabilised bamboo panel,Clay-straw adobe
+38.31578947368421,200.0,Clay-straw adobe,Clay-straw adobe
 38.31578947368421,236.8421052631579,Lime-stabilised bamboo panel,Clay-straw adobe
 38.31578947368421,273.6842105263158,Lime-stabilised bamboo panel,Clay-straw adobe
 38.31578947368421,310.5263157894737,Lime-stabilised bamboo panel,Clay-straw adobe

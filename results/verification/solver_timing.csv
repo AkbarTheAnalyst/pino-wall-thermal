@@ -1,0 +1,4 @@
+solver,seconds_per_case
+FDM_production,0.5271488780000027
+exact_single,0.0038943662799920276
+exact_batched,0.00036773502519999964
